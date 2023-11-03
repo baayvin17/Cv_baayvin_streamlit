@@ -162,11 +162,3 @@ fig.set_size_inches(4, 2)  # Ajustez ces dimensions selon vos préférences
 st.subheader("Niveaux de compétence en langues")
 st.pyplot(fig)
 
-# Créer une carte 3D (globe)
-view_state = pdk.ViewState(latitude=0, longitude=0, zoom=0)
-r = pdk.Deck(
-    map_style='https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
-    initial_view_state=view_state
-)
-
-st.pydeck_chart(r)
