@@ -1,12 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import streamlit.components.v1 
 import matplotlib.pyplot as plt
-import pydeck as pdk
-
-
-
 
 st.set_page_config(page_title="Baayvin CV")
 
@@ -15,13 +10,11 @@ with col1:
     st.image("assets/image_profile.jpg", width=230)
 
 with col2:
-    
     st.title("Baayvin SOUBRAMANIEN")
     st.write("Etudiant en Bachelor 2 Informatique à Paris Ynov Campus / 19ans ")
-    st.info("Je suis actuellement à la recherche d'un stage en Data d'une dureé minimum de 6 semaines")
+    st.info("Je suis actuellement à la recherche d'un stage en Data d'une durée minimum de 6 semaines")
     st.write("📫", "baayvin@gmail.com")
 
-# Bouton de téléchargement du CV
 if st.button("Télécharger CV"):
     with open("assets/cv_baayvin.pdf", "rb") as pdf_file:
         pdf_data = pdf_file.read()
