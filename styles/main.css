@@ -1,0 +1,100 @@
+/* styles/main.css */
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Modifier la couleur du texte principal */
+h1, h2 {
+    color: #fefefe;
+}
+
+/* Styles pour les liens */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+
+/* Boutons de téléchargement */
+.download-button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section {
+    margin-top: 20px;
+}
+
+/* Colonnes */
+.column {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Image de profil */
+.profile-pic {
+    border-radius: 50%;
+}
+
+/* Réseaux sociaux */
+.social-media {
+    margin-top: 10px;
+}
+
+/* Compétences */
+.skills {
+    margin-top: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Langages de programmation */
+.programming-languages {
+    margin-top: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Compétences informatiques */
+.computer-skills {
+    margin-top: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Niveaux de langues */
+.language-scores {
+    margin-top: 20px;
+}
+
+/* Formations */
+.education {
+    margin-top: 20px;
+}
+
+/* Expérience étudiante */
+.student-experience {
+    margin-top: 20px;
+}
+
+/* Expériences professionnelles */
+.professional-experience {
+    margin-top: 20px;
+}
+
+/* Centres d'intérêt */
+.interests {
+    margin-top: 20px;
+}
+
+/* styles/main.css */
+
