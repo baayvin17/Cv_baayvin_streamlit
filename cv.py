@@ -1,8 +1,9 @@
+import matplotlib
+matplotlib.use('agg')
 import streamlit as st
 import numpy as np
 import pandas as pd
-import streamlit.components.v1 
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt  
 import pydeck as pdk
 
 
