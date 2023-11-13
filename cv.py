@@ -9,6 +9,7 @@ import pydeck as pdk
 
 
 
+
 st.set_page_config(page_title="Baayvin CV")
 
 col1, col2 = st.columns(2, gap="small")
