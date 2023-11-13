@@ -34,8 +34,8 @@ if st.button("Télécharger CV"):
         data=pdf_data,
         key="cv_baayvin",
         help="Cliquez sur le bouton pour télécharger le CV",
-        on_click=None,  # Supprimez la ligne on_click
-        file_name="cv_baayvin.pdf"  # Définir le nom du fichier de téléchargement
+        on_click=None,  
+        file_name="cv_baayvin.pdf"  
     )
 
 # --- QUALIFICATIONS ---
@@ -114,10 +114,10 @@ project_info = [
     },
 ]
 
-# Définir un index pour suivre la position actuelle de l'image
+
 image_index = st.session_state.get("image_index", 0)
 
-# Afficher l'image actuelle et le lien associé
+
 st.image(project_info[image_index]["image"], use_column_width=True)
 st.write(f"Lien vers le projet : {project_info[image_index]['lien']}")
 
@@ -127,12 +127,12 @@ with col1:
     if st.button("Précédent", key="prev_button"):
         image_index = (image_index - 1) % len(project_info)
 with col2:
-    st.write("")  # Espace vide pour le centrage des boutons
+    st.write("")  
 with col3:
     if st.button("Suivant", key="next_button"):
         image_index = (image_index + 1) % len(project_info)
 
-# Mettre à jour l'index dans la session
+
 st.session_state.image_index = image_index
 
 
@@ -151,16 +151,16 @@ st.write(
 
 # Données sur les langages et les niveaux
 langages = ['Français', 'Anglais', 'Tamoul ( Indien )', 'Allemand']
-niveaux = [5, 4, 4, 2]  # Les niveaux de compétence (par exemple, sur une échelle de 1 à 5)
+niveaux = [5, 4, 4, 2]  
 
 # Créer un graphique en barres
 fig, ax = plt.subplots()
 ax.barh(langages, niveaux, color='skyblue')
-ax.set_xlabel('Niveau de compétence')  # L'axe X représente le niveau de compétence
+ax.set_xlabel('Niveau de compétence')  
 
 # Afficher le graphique dans Streamlit
 st.write('\n')
-fig.set_size_inches(4, 2)  # Ajustez ces dimensions selon vos préférences
+fig.set_size_inches(4, 2)  
 st.subheader("Niveaux de compétence en langues")
 st.pyplot(fig)
 
